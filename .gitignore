@@ -1,0 +1,12 @@
+*.log
+node_modules/
+# Ignorer tous les fichiers .txt
+*.txt
+
+# Ignorer tous les fichiers dans un répertoire spécifique
+/directory_name/*
+
+# Ignorer un fichier spécifique
+file_to_ignore.txt
+
+.env
