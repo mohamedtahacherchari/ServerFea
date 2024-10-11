@@ -1,13 +1,6 @@
 const nodemailer = require('nodemailer')
 const {google} = require('googleapis')
-const {
-    
-
-
-
-
-    
-} = google.auth;
+const {OAuth2} = google.auth;
 const OAUTH_PLAYGROUND = 'https://developers.google.com/oauthplayground'
 
 const {
@@ -18,13 +11,7 @@ const {
     email_admin
 } = process.env
 
-const 
-
-
-
-
-
-Client = new OAuth2(
+const oauth2Client = new OAuth2(
     MAILING_SERVICE_CLIENT_ID,
     MAILING_SERVICE_CLIENT_SECRET,
     MAILING_SERVICE_REFRESH_TOKEN,
